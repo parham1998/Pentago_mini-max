@@ -25,9 +25,9 @@ game-tree complexity: The most meaning full parameters to estimate the game-tree
 
 To solve a game with minimax search algorithm, the whole game-tree has to be evaluated. This resultsin a complexity of Θ(moves ^ depth). But alpha-beta Search can reduce the exponent by half if perfect move ordering is given: Θ(moves ^ depth/2)
 
-Even with random move ordering the complexity shrinks to Θ(moves ^ (3/4 * depth)). I used random move ordering in this project.
+Even with random move ordering the complexity shrinks to Θ(moves ^ (3/4 * depth)). 
 
-Actually, I considered one of the empty places at the center of sub-boards for the computer's first two moves, for the next 10 steps, I reduced the depth of the tree to 4, and then I set the depth to 5 until the end.
+Actually, I used random move ordering in this project. I considered one of the empty places at the center of sub-boards for the computer's first two moves, for the next 10 steps, I reduced the depth of the tree to 4, and then I set the depth to 5 until the end.
 
 ### the following animation shows the performance of the mini-max algorithm in the Pentago game: (animation speed has been doubled)
 ![pentago](https://user-images.githubusercontent.com/85555218/123473179-732a4100-d60d-11eb-885a-aed27e214637.gif)
