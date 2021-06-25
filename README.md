@@ -21,9 +21,10 @@ If neither you nor the computer achieves five in a row, the game ends after the 
     Beta is the best value that the minimizer currently can guarantee at that level or above.
     
 ### implementation details
-game-tree complexity: The most meaning full parameters to estimate the game-tree size are the number of moves until a game finishes, called game depth, and the number of possible moves per state. for the game Pentago, there are 36 possible places at first, then reduced by 1 at each step. there are also 8 possible rotating at each step which makes the game complexity very much! (worst case: 36*8 * 35*8 * 34*8 * ... * 1*8 = 36! * 8^36)
+game-tree complexity: The most meaning full parameters to estimate the game-tree size are the number of moves until a game finishes, called game depth, and the number of possible moves per state. for the game Pentago, there are 36 possible places at first, then reduced by 1 at each step. there are also 8 possible rotating at each step which makes the game complexity very much! (worst case: (36 * 8) * (35 * 8) * (34 * 8) * ... * (1 * 8) = 36! * 8^36)
 
 To solve a game with minimax search algorithm, the whole game-tree has to be evaluated. This resultsin a complexity of Θ(moves ^ depth). But alpha-beta Search can reduce the exponent by half if perfect move ordering is given: Θ(moves ^ depth/2)
+
 Even with random move ordering the complexity shrinks to Θ(moves ^ (3/4 * depth)). I used random move ordering in this project.
 
 Actually, I considered one of the empty places at the center of sub-boards for the computer's first two moves, for the next 10 steps, I reduced the depth of the tree to 4, and then I set the depth to 5 until the end.
