@@ -27,7 +27,7 @@ To solve a game with minimax search algorithm, the whole game-tree has to be eva
 
 Even with random move ordering the complexity shrinks to Θ(moves ^ (3/4 * depth)). 
 
-Actually, I used random move ordering in this project. I considered one of the empty places at the center of sub-boards for the computer's first two moves, for the next 10 steps, I reduced the depth of the tree to 4, and then I set the depth to 5 until the end.
+Actually, I used random move ordering in this project. I considered one of the empty places at the center of sub-boards for the computer's first two moves, for the next 10 moves, I reduced the depth of the tree to 4, and then I set the depth to 5 until the end.
 
 ### the following animation shows the performance of the mini-max algorithm in the Pentago game: (animation speed has been doubled)
 ![pentago](https://user-images.githubusercontent.com/85555218/123473179-732a4100-d60d-11eb-885a-aed27e214637.gif)
