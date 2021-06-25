@@ -9,7 +9,7 @@ The game finishes, when you or the computer puts five marble in a row at first. 
 
 If neither you nor the computer achieves five in a row, the game ends after the 36th move with a draw. 
 
-### mini-max algorithm and aplpha-beta pruning
+### mini-max algorithm and alpha-beta pruning
     mini-max algorithm tries to find the best move in every step by evaluates all the available moves.
 
     alpha-Beta pruning is not actually a new algorithm, rather an optimization technique for minimax algorithm. 
